@@ -1,0 +1,64 @@
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+button {
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+.header { text-align: center; }
+
+.add-text {
+  font-size: 1.8rem;
+  color: green;
+}
+
+.add-btn {
+  line-height: 0.9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+  background-color: rgb(216, 220, 225);
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+  border: 1px solid black;
+  margin: 2px 0;
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+}
+.elem > div {
+  margin-right: 6px;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-right: 1px solid black;
+}
+
+.remove-btn {
+  line-height: 0.9;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 2rem;
+}

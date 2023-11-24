@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Average buy price</title>
+</head>
+<body>
+  <div class="header">
+    <h2>Avarage Buy Price</h2>
+    <div>
+      <span class="add-text">Add field:</span>
+      <button class="add-btn" onclick='createField()'>+</button>
+    </div>
+  </div>
+
+  <form id="container" class="container">
+    <div class="field">
+      <div class="index">1</div>
+      <div class="elem">
+        <div class="price-text">Price:</div>
+        <input class="price-inp" type="text" name="price" required />
+      </div>
+      <div class="elem">
+        <div class="count-text">Count:</div>
+        <input class="count-inp" type="text" name="count" required />
+      </div>
+      <button class="remove-btn" onclick="removeField(this)">-</button>
+    </div>
+    <div class="field">
+      <div class="index">2</div>
+      <div class="elem">
+        <div class="price-text">Price:</div>
+        <input class="price-inp" type="text" name="price" required />
+      </div>
+      <div class="elem">
+        <div class="count-text">Count:</div>
+        <input class="count-inp" type="text" name="count" required />
+      </div>
+      <button class="remove-btn" onclick="removeField(this)">-</button>
+    </div>
+    <button class="calc-btn" type="submit">Calculate</button>
+  </form>
+
+  <div class="result-container">
+    <div class="elem">
+      <div>Average buy price: </div>
+      <div id="averBuyContainer"></div>
+    </div>
+    <div class="elem">
+      <div>Coin amount: </div>
+      <div id="coinAmountContainer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
