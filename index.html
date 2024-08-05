@@ -9,9 +9,15 @@
 <body>
   <div class="header">
     <h2>Avarage Buy Price</h2>
-    <div>
-      <span class="add-text">Add field:</span>
-      <button class="add-btn" onclick='createField()'>+</button>
+    <div class="control-btns">
+      <div class="control-btns_add">
+        <span class="add-text">Add field:</span>
+        <button type="button" class="add-btn" onclick='createField()'>+</button>
+      </div>
+      <div class="control-btns_clear">
+        <span class="clear-text">Clear input:</span>
+        <button type="button" class="clear-btn" onclick='clearFields()'>purge</button>
+      </div>
     </div>
   </div>
 
@@ -26,7 +32,7 @@
         <div class="count-text">Count:</div>
         <input class="count-inp" type="text" name="count" required />
       </div>
-      <button class="remove-btn" onclick="removeField(this)">-</button>
+      <button type="button" class="remove-btn" onclick="removeField(this)">-</button>
     </div>
     <div class="field">
       <div class="index">2</div>
@@ -38,7 +44,7 @@
         <div class="count-text">Count:</div>
         <input class="count-inp" type="text" name="count" required />
       </div>
-      <button class="remove-btn" onclick="removeField(this)">-</button>
+      <button type="button" class="remove-btn" onclick="removeField(this)">-</button>
     </div>
     <button class="calc-btn" type="submit">Calculate</button>
   </form>

@@ -10,28 +10,40 @@ button {
 
 .header { text-align: center; }
 
-.add-text {
+.control-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.control-btns_clear {
+  font-size: 1.5rem;
+}
+
+.control-btns_add {
+  line-height: 0.9;
+}
+
+.add-text, .clear-text {
   font-size: 1.8rem;
   color: green;
 }
 
-.add-btn {
-  line-height: 0.9;
-}
+
 
 .container {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 10px auto;
-  background-color: rgb(216, 220, 225);
 }
 
 .field {
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
   border: 1px solid black;
-  margin: 2px 0;
+  padding: 4px;
+  margin-bottom: 6px;
+  background-color: rgb(216, 220, 225);
 }
 
 .elem {
@@ -40,6 +52,8 @@ button {
 }
 .elem > div {
   margin-right: 6px;
+  margin-left: 10px;
+  font-size: 18px;
 }
 
 .index {
@@ -60,5 +74,8 @@ button {
   text-align: center;
   width: 80%;
   margin: 10px auto;
-  font-size: 2rem;
+}
+
+.result-container div {
+  font-size: 20px;
 }
